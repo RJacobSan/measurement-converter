@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Measurement Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header>
+      <h1>Universal Measurement Converter</h1>
+      <p>Convert common measurement units quickly and accurately.</p>
+    </header>
+
+
+    <!-- TOP ADVERTISEMENT -->
+    <div class="ad-container ad-top">
+      <span>Advertisement</span>
+      <!-- Place your ad code here -->
+    </div>
+
+
+    <section class="converter">
+
+      <div class="field">
+        <label for="category">Measurement</label>
+        <select id="category"></select>
+      </div>
+
+      <div class="conversion-grid">
+
+        <div class="field">
+          <label for="fromUnit">From</label>
+          <select id="fromUnit"></select>
+        </div>
+
+        <button 
+          id="swapBtn" 
+          class="swap" 
+          title="Swap units" 
+          aria-label="Swap units">
+          ⇄
+        </button>
+
+        <div class="field">
+          <label for="toUnit">To</label>
+          <select id="toUnit"></select>
+        </div>
+
+      </div>
+
+      <div class="field">
+        <label for="amount">Value</label>
+        <input 
+          id="amount" 
+          type="number" 
+          value="1" 
+          step="any" 
+          placeholder="Enter a value">
+      </div>
+
+      <div class="result">
+        <span>Result</span>
+        <strong id="result">—</strong>
+      </div>
+
+    </section>
+
+
+    <!-- MIDDLE ADVERTISEMENT -->
+    <div class="ad-container ad-middle">
+      <span>Advertisement</span>
+      <!-- Place your ad code here -->
+    </div>
+
+
+    <section class="info">
+
+      <h2>Supported categories</h2>
+
+      <div id="categoryList" class="chips"></div>
+
+      <p class="note">
+        This includes a broad set of everyday, scientific, engineering,
+        cooking, and digital units. Specialized units can be added to the
+        conversion database in <code>script.js</code>.
+      </p>
+
+    </section>
+
+
+    <!-- BOTTOM ADVERTISEMENT -->
+    <div class="ad-container ad-bottom">
+      <span>Advertisement</span>
+      <!-- Place your ad code here -->
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
